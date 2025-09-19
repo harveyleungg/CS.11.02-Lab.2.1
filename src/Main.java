@@ -74,11 +74,11 @@ public class Main {
 
     // 7. roundPositiveValueToNearestInteger
     public static double roundPositiveValueToNearestInteger(double num){
-        return Math.round(num);
+        return (int) (num + 0.5);
     }
 
     // 8. roundNegativeValueToNearestInteger
     public static double roundNegativeValueToNearestInteger(double num){
-        return Math.round(num);
+        return -roundPositiveValueToNearestInteger(-num);
     }
 }
